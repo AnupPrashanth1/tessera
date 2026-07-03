@@ -1,0 +1,57 @@
+name: Bug report
+description: Report a reproducible defect in Tessera.
+title: 'fix: '
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value:
+        Thank you for helping improve Tessera. Please include enough detail to reproduce the issue.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide a minimal reproduction path.
+      placeholder: |
+        1. Go to ...
+        2. Run ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Who or what is affected?
+    validations:
+      required: false
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, browser, Node.js, Python, Docker, or deployment context.
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Remove secrets, tokens, private keys, and sensitive data before attaching logs.
+      render: shell
+    validations:
+      required: false

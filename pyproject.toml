@@ -1,0 +1,34 @@
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = [
+  ".git",
+  ".venv",
+  "venv",
+  "node_modules",
+  "dist",
+  "build",
+  ".next",
+  ".terraform",
+  "synthetic-data/generated",
+  "synthetic-data/exports",
+]
+
+[tool.ruff.lint]
+select = [
+  "E",
+  "F",
+  "I",
+  "B",
+  "UP",
+  "S",
+  "SIM",
+]
+ignore = [
+  "S101",
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
